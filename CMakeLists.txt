@@ -7,12 +7,19 @@ project(cmake_cxx_demo)
 #
 set(CMAKE_CXX_STANDARD 11)
 set(APP_NAME cmake_cxx_demo)
+
 #
 add_executable(${APP_NAME} src/main.cpp)
 
 
-# Link library
+# Link library hello
 include_directories(Inc ext/hello/include)
 target_link_libraries(${APP_NAME} hello)
 
+# Link library Demo
+include_directories(Inc ext/Demo)
+target_link_libraries(${APP_NAME} Demo)
+
+
 add_subdirectory(ext/hello)
+add_subdirectory(ext/Demo)
