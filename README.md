@@ -23,3 +23,19 @@ My name is: Zhou Yuanzhen
 Demo object is being deleted
 ****************************************
 ```
+
+## Use Makefile
+
+```shell
+echo "All in one mode"
+make all
+
+echo "Generate CMake project"
+make cmake
+
+echo "Build the lib and executable application"
+make build
+
+echo "Run and test our application"
+make run
+```
